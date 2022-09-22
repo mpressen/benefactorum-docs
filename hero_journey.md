@@ -1,1 +1,13 @@
-from developeur to entrepreneur
+from primary teacher to entrepreneur
+
+1. at first, I was a young primary teacher unhappy with the job that needed to find another purpose in life.
+2. finding '"l'école 42", I found my new goal : become dev. Ultimate goal: become an entrepreneurship with positive impact.
+3. after 3 years as a dev, I find a well paid job remotely in a fintech, and starts donating to non-profits a lot.
+4. Giving to charity felt like a way to unite my individualist goals (getting better at my craft, getting paid for it,
+   raising in the societal hierarchy ($$$ is king)) and my leftist values (about sharing)
+5. I start considering developing a web app as a side project in order to resolve a pain I had. Giving so much to non-profits I knew it would feel nice If I had a place, a web platform, where all my donations where centralized, where I could measure my impact, where I could be safe from people harassing me for more, where I could be proud of what I was doing and where I could meet people akin, maybe benefiting from it in some way. (I'd be willing to give business to other people sharing my view on sharing revenue for higher purpose than a big car and a private swimming-pool). I also felt that this kind of 'efficient altruism' was to be promoted, as too much high paid profiles just don't care about anything else than their social class and benefits. It's time to change the expectations of the youth about 'what it is to be successful in life ?'
+6. During that year I forgot the project for a while, but then it came back to me hard later. I felt it was too good an idea just to be a side project, I felt that it was a false start to approach it only from the dev perspective. Am I able to develop the platform ? probably. Do I know how I will do it ? No but it doesn't matter, that I succeed or not, if no one konows about it, if no one uses it anyway.
+7. I decided to quit my job, trying to get a 'rupture conventionnelle'. At first I thought that even if I didn't get it I would get 'chomâge' anyway 4 months later. I didn't get the 'rupture conventionnelle' and then  a 'conseillère du pôle emploi' adviced me strongly to get a CDD first before setting up my project. This was a drawback, but I felt that no one would take his chance on this project meanwhile.
+8. I found a freelance mission with a 'portage salarial' status which will get me 'chomâge' at the end of it, and I engaged for a year of my time, in march 2022.
+9. We're now in late September, I changed my contract to have a weekly day off, I have now a bit of time to design thoroughly what's my project is going to be about.
+10.
