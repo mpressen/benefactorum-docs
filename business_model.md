@@ -13,5 +13,6 @@ Financement de la plateforme :
 - possibilité pour les assos de payer pour accéder à ce public à haut potentiel, en piochant sur leur budget comm/marketing.
   pour que ça marche je dois prouver que ce canal d'acquisition a un ROI satisfaisant (post sponsorisé dans le feed, campagne menée sur le site, mailing).
 - possibilité de faire un don au titre de benefactorum à chaque don effectué sur la plateforme
-- possiblilité de devenir adhérent de l'association
-- shop
+- possiblilité de devenir adhérent de l'association (à partir de 'grands dos')
+- shop à l'effigie de benefactorum, 'grand do' ou liens affiliés vers les boutiques des assos ?
+- faire payer l'accès aux entreprises qui utiliseraient benefactorum comme vitrine de leur impact positif

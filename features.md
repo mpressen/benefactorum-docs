@@ -54,3 +54,7 @@ des badges à gagner selon les actions que l'on fait sur la plateforme --> incit
 
 
 - possibilité de rentrer ces dons à l'extérieur de la plateforme (il faut joindre le reçu fiscal pour qu'il soit avalisé)
+
+
+devenir adhérent de l'asso benefactorum, c'est recevoir en échange une carte premium datée de l'année de la cotisation.
+Seuls les 'grands dos' peuvent devenir adhérent.
