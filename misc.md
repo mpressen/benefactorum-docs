@@ -5,3 +5,8 @@ Avoir une piscine chez soi, une maison secondaire sur la côte, une belle voitur
 
 Il faut aussi redéfinir la réussite au sein des sociétés occidentales.
 Avoir une piscine chez soi, une maison secondaire sur la côte, une belle voiture qu’on sort tous les dimanches, tout en partant en vacances à l’autre bout de la planète tous les ans, ce n’est plus un ‘schéma’ souhaitable si on veut que tous puissent vivre dignement. Il faut trouver d’autres signes extérieures de richesse qui soient plus responsables.
+
+
+- promouvoir un nouvel habitus de réussite sociale: l'altruisme.
+
+promouvoir la munificence ?
