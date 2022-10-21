@@ -3,6 +3,9 @@ quid du financement au départ ?
 quid de la relation avec les assos ?
 
 comment faire pour que d'éventuels donateurs fassent suffisamment confiance à l'asso en tant qu'intermédiaire ?
+Pour le mandat SEPA notamment, besoin de beaucoup de confiance ...
+Proposer ce mode de paiement pour des membres premium ? La confiance serait boosté pour les utilisateurs si le paiement SEPA était une feature premium..
+Avoir un système de paiement robuste (si partenaire de paiement off, on switch sur un autre, pas comme HelloAsso ... :p)
 
 comment attirer des donateurs sur la plateforme ?
 --> les déjà-donateurs ont certains dons récurrents déjà en place, comment opérer la migration ?

@@ -6,5 +6,5 @@ côté donateur:
 
 côté asso:
 
-- un prrocess supplémentaire d'acquisition de donateur
+- un process supplémentaire d'acquisition de donateur
 - perte du contrôle sur le funnel d'acquisition et sur le process d'onboarding et de suivi : ils sont désormais dépendant des infos transmises par benefactorum, ils ne peuvent pas utiliser les leviers dont ils ont l'habitude pour éviter le churn
