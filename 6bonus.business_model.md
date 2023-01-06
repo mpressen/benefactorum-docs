@@ -6,7 +6,7 @@ Me documenter sur le pourcentage budgétaire que les assos allouent à recruter 
 Cout de la plateforme :
 - développement de l'app +++ (-> salarié ou freelance)
 - coût de l'infrastructure +
-- campagne comm/market + (-> salarié ou freelance)
+- campagne comm/market ++ (-> salarié ou freelance)
 
 Financement de la plateforme :
 - indolore pour le donateur

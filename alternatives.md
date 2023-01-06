@@ -1,4 +1,4 @@
-Etre en concurrence direct avec HelloAssoet iRaiser en tant que 'widget || gestionnaire de formulaire'
+Etre en concurrence direct avec HelloAsso et iRaiser en tant que 'widget || gestionnaire de formulaire'
 
 Théorie: Les resto du coeur préfère passer par iRaiser (payant) car :
 - moins voyant (cuisine interne, clarté dans le don)
