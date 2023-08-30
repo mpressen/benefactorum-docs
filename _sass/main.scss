@@ -46,11 +46,9 @@ html {
 
 .footer {
   margin-top: 64px;
-
-  .background {
-    display: flex;
-    justify-content: center;
-    background-color: #003333;
+  display: flex;
+  justify-content: center;
+  background-color: #003333;
 
     .container {
       color: #F1F3F3;
@@ -87,7 +85,6 @@ html {
           display: flex;
           justify-content: center;
           flex: 1 0 0;
-          // max-width: 800px;
           gap: 32px;
           align-items: center;
           flex-direction: column;
@@ -100,11 +97,6 @@ html {
         .socials {
           display: flex;
           gap: 64px;
-
-
-          // @media only screen and (min-width: 657px) {
-          //   gap: 32px;
-          // }
 
           @media only screen and (min-width: 1039px) {
             gap: 8px;
@@ -131,5 +123,4 @@ html {
         font-size: 10px;
       }
     }
-  }
 }

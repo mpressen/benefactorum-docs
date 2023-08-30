@@ -30,13 +30,11 @@ html body {
 
 .footer {
   margin-top: 64px;
-}
-.footer .background {
   display: flex;
   justify-content: center;
   background-color: #003333;
 }
-.footer .background .container {
+.footer .container {
   color: #F1F3F3;
   width: 100%;
   max-width: 1536px;
@@ -45,14 +43,14 @@ html body {
   padding: 0px 8px;
   gap: 16px;
 }
-.footer .background .container a {
+.footer .container a {
   color: #F1F3F3;
   text-decoration: none;
 }
-.footer .background .container a:hover {
+.footer .container a:hover {
   text-decoration: underline;
 }
-.footer .background .container .nav-links {
+.footer .container .nav-links {
   padding: 8px 0px;
   display: flex;
   align-items: center;
@@ -60,11 +58,11 @@ html body {
   gap: 32px;
 }
 @media only screen and (min-width: 1039px) {
-  .footer .background .container .nav-links {
+  .footer .container .nav-links {
     flex-direction: row;
   }
 }
-.footer .background .container .nav-links .menu {
+.footer .container .nav-links .menu {
   padding: 0px 64px;
   display: flex;
   justify-content: center;
@@ -74,31 +72,31 @@ html body {
   flex-direction: column;
 }
 @media only screen and (min-width: 657px) {
-  .footer .background .container .nav-links .menu {
+  .footer .container .nav-links .menu {
     flex-direction: row;
   }
 }
-.footer .background .container .nav-links .socials {
+.footer .container .nav-links .socials {
   display: flex;
   gap: 64px;
 }
 @media only screen and (min-width: 1039px) {
-  .footer .background .container .nav-links .socials {
+  .footer .container .nav-links .socials {
     gap: 8px;
   }
 }
-.footer .background .container .nav-links .socials a:hover {
+.footer .container .nav-links .socials a:hover {
   text-decoration: none;
 }
-.footer .background .container .nav-links .socials .reseau {
+.footer .container .nav-links .socials .reseau {
   width: 30px;
 }
 @media only screen and (min-width: 1039px) {
-  .footer .background .container .nav-links .socials .reseau {
+  .footer .container .nav-links .socials .reseau {
     width: 20px;
   }
 }
-.footer .background .container .legal-links {
+.footer .container .legal-links {
   justify-content: center;
   display: flex;
   font-size: 10px;
