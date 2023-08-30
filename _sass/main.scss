@@ -32,6 +32,22 @@ body {
     align-items: center;
   }
 
+  .hamburger-lines {
+    cursor: pointer;
+    height: 26px;
+    width: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .topnav .hamburger-lines .line {
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #003333;
+  }
+
   .sandwitch-menu {
     display: none;
     padding: 32px 0px;
@@ -43,17 +59,8 @@ body {
 
     a {
       color: #F1F3F3;
+      text-decoration: underline;
     }
-  }
-
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-
-  .active {
-    background-color: #04AA6D;
-    color: white;
   }
 
 
