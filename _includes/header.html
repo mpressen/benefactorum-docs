@@ -1,14 +1,40 @@
-
-<header class='header-container'>
-  <div class='header'>
+<!-- <header class='header'>
+  <div class='container'>
 
     <img src="./assets/images/benefactorum/small-logo.svg" alt="Benefactorum"></img>
     <nav class='nav'></nav>
-    <img class='hamburger' src="./assets/images/header-sandwitch.svg" alt="Benefactorum"></img>
-    <!-- {% for item in site.data.navigation %}
-      <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>
+    <a>
+      <img class='hamburger' src="./assets/images/header-sandwitch.svg" alt="Benefactorum"></img>
+    </a>
+    {% for item in site.data.navigation %}
+        <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>
         {{ item.name }}
       </a>
-      {% endfor %} -->
+      {% endfor %}
   </div>
-</header>
+</header> -->
+
+<nav class="header">
+  <div class="container">
+    <a href='/'>
+      <img class='logo-mobile' src="./assets/images/benefactorum/small-logo.svg" alt="Benefactorum"></img>
+      <img class='logo-full' src="./assets/images/benefactorum/full-logo.svg" alt="Benefactorum"></img>
+    </a>
+    <div class="nav-container">
+      <input class="checkbox" type="checkbox" name="" id="" />
+      <div class="hamburger-lines">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+        <span class="line line3"></span>
+      </div>
+      <div class="menu-items">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">about</a></li>
+        <li><a href="#">blogs</a></li>
+        <li><a href="#">portfolio</a></li>
+        <li><a href="#">contact</a></li>
+      </div>
+    </div>
+    <button class="sign-up"></button>
+  </div>
+</nav>
