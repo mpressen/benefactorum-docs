@@ -1,8 +1,6 @@
-- name: Home
+- name: La plateforme
+  link: /la-plateforme.html
+- name: La mission
+  link: /la-mission.html
+- name: FAQ
   link: /
-- name: About
-  link: /about.html
-- name: Blog
-  link: /blog.html
-- name: Staff
-  link: /staff.html

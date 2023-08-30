@@ -1,5 +1,119 @@
-.current {
-  color: green;
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.ttf");
+}
+html {
+  font-family: "Montserrat";
+}
+html body {
+  margin: 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  width: 100%;
+  max-width: 1536px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+  padding: 16 8;
+}
+
+.hamburger {
+  cursor: pointer;
+}
+
+.footer {
+  margin-top: 64px;
+}
+.footer .background {
+  display: flex;
+  justify-content: center;
+  background-color: #003333;
+}
+.footer .background .container {
+  color: #F1F3F3;
+  width: 100%;
+  max-width: 1536px;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 8px;
+  gap: 16px;
+}
+.footer .background .container a {
+  color: #F1F3F3;
+  text-decoration: none;
+}
+.footer .background .container a:hover {
+  text-decoration: underline;
+}
+.footer .background .container .nav-links {
+  padding: 8px 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 32px;
+}
+@media only screen and (min-width: 1039px) {
+  .footer .background .container .nav-links {
+    flex-direction: row;
+  }
+}
+.footer .background .container .nav-links .menu {
+  display: flex;
+  padding: 0px 64px;
+  justify-content: center;
+  flex: 1 0 0;
+}
+.footer .background .container .nav-links .menu .nav {
+  display: flex;
+  max-width: 800px;
+  justify-content: center;
+  gap: 32px;
+  align-items: center;
+  flex: 1 0 0;
+  flex-direction: column;
+}
+@media only screen and (min-width: 657px) {
+  .footer .background .container .nav-links .menu .nav {
+    flex-direction: row;
+    gap: 32px;
+  }
+}
+.footer .background .container .nav-links .socials {
+  display: flex;
+  gap: 64px;
+}
+@media only screen and (min-width: 657px) {
+  .footer .background .container .nav-links .socials {
+    gap: 32px;
+  }
+}
+@media only screen and (min-width: 1039px) {
+  .footer .background .container .nav-links .socials {
+    gap: 8px;
+  }
+}
+.footer .background .container .nav-links .socials a:hover {
+  text-decoration: none;
+}
+.footer .background .container .nav-links .socials .reseau {
+  width: 30px;
+}
+@media only screen and (min-width: 1039px) {
+  .footer .background .container .nav-links .socials .reseau {
+    width: 20px;
+  }
+}
+.footer .background .container .legal-links {
+  justify-content: center;
+  display: flex;
+  font-size: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */
