@@ -31,22 +31,6 @@ header a {
   text-decoration: none;
   color: #003333;
 }
-header .logo-mobile {
-  display: block;
-}
-@media only screen and (min-width: 378px) {
-  header .logo-mobile {
-    display: none;
-  }
-}
-header .logo-full {
-  display: none;
-}
-@media only screen and (min-width: 378px) {
-  header .logo-full {
-    display: block;
-  }
-}
 header .sign-up {
   display: none;
 }

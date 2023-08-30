@@ -33,22 +33,6 @@ header {
     color: #003333
   }
 
-  .logo-mobile {
-    display: block;
-
-    @media only screen and (min-width: 378px) {
-        display: none;
-      }
-  }
-
-  .logo-full {
-    display: none;
-
-    @media only screen and (min-width: 378px) {
-        display: block;
-      }
-  }
-
   .sign-up {
     display: none;
 

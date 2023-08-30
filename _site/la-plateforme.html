@@ -7,16 +7,19 @@
   <link rel="icon" href="favicon.svg" type="image/x-icon" />
   <title>Benefactorum | plateforme</title>
   <link rel="stylesheet" href="/assets/css/styles.css">
+  <script type="text/javascript" src="/assets/js/header.js"></script>
   <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Benefactorum plateforme</title>
 <meta name="generator" content="Jekyll v4.3.2" />
 <meta property="og:title" content="Benefactorum plateforme" />
 <meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/la-plateforme.html" />
+<meta property="og:url" content="http://localhost:4000/la-plateforme.html" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Benefactorum plateforme" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","headline":"Benefactorum plateforme","url":"/la-plateforme.html"}</script>
+{"@context":"https://schema.org","@type":"WebPage","headline":"Benefactorum plateforme","url":"http://localhost:4000/la-plateforme.html"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -26,8 +29,11 @@
   <header>
   <div class="topnav">
     <a href='/'>
-      <img class='logo-mobile' src="./assets/images/benefactorum/small-logo.svg" alt="Benefactorum"></img>
-      <img class='logo-full' src="./assets/images/benefactorum/full-logo.svg" alt="Benefactorum"></img>
+      <picture>
+        <source media="(min-width: 378px)" srcset="./assets/images/benefactorum/full-logo.svg">
+        <img src="./assets/images/benefactorum/small-logo.svg" alt="Benefactorum"/>
+      </picture>
+
     </a>
     <div class='nav-menu'>
       <a href="/la-plateforme">La plateforme</a>
@@ -35,7 +41,7 @@
       <a href="#foire-aux-questions">FAQ</a>
       <a href="#blog">Blog</a>
     </div>
-    <a href="javascript:void(0);" class="icon hamburger-lines" onclick="myFunction()">
+    <a href="javascript:void(0);" class="icon hamburger-lines" onclick="toggleMenu()">
       <span class="line line1" id="line1"></span>
       <span class="line line2" id="line2"></span>
       <span class="line line3" id="line3"></span>
@@ -49,26 +55,6 @@
     <a href="#blog">Blog</a>
   </div>
 </header>
-
-<script>
-  function myFunction() {
-    var x = document.getElementById("myLinks");
-    var line1 = document.getElementById("line1");
-    var line2 = document.getElementById("line2");
-    var line3 = document.getElementById("line3");
-    if (x.style.display === "flex") {
-      x.style.display = "none";
-      line1.style.transform = "rotate(0)"
-      line2.style.transform = "scaleY(1)"
-      line3.style.transform = "rotate(0)"
-    } else {
-      x.style.display = "flex";
-      line1.style.transform = "rotate(45deg)"
-      line2.style.transform = "scaleY(0)"
-      line3.style.transform = "rotate(-45deg)"
-    }
-  }
-</script>
 
 
 
@@ -84,6 +70,7 @@
           <a href="/la-plateforme.html">La plateforme</a>
           <a href="/la-mission.html">La mission</a>
           <a href="#foire-aux-questions">Foire aux questions</a>
+          <a href="#blog">Blog</a>
           <a href="mailto:contact@benefactorum.org">Contact</a>
         </div>
         <div class="socials">
