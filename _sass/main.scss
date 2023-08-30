@@ -83,24 +83,17 @@ html {
         }
 
         .menu {
-          display: flex;
           padding: 0px 64px;
+          display: flex;
           justify-content: center;
           flex: 1 0 0;
+          // max-width: 800px;
+          gap: 32px;
+          align-items: center;
+          flex-direction: column;
 
-          .nav {
-            display: flex;
-            max-width: 800px;
-            justify-content: center;
-            gap: 32px;
-            align-items: center;
-            flex: 1 0 0;
-            flex-direction: column;
-
-            @media only screen and (min-width: 657px) {
-              flex-direction: row;
-              gap: 32px;
-            }
+          @media only screen and (min-width: 657px) {
+            flex-direction: row;
           }
         }
 
@@ -109,9 +102,9 @@ html {
           gap: 64px;
 
 
-          @media only screen and (min-width: 657px) {
-            gap: 32px;
-          }
+          // @media only screen and (min-width: 657px) {
+          //   gap: 32px;
+          // }
 
           @media only screen and (min-width: 1039px) {
             gap: 8px;
@@ -136,7 +129,6 @@ html {
         justify-content: center;
         display: flex;
         font-size: 10px;
-
       }
     }
   }
