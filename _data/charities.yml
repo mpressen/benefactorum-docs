@@ -1,0 +1,87 @@
+- name: Les restos du coeur
+  file: 1.restos-du-coeur.svg
+  website: https://www.restosducoeur.org/
+- name: Solidarités nouvelles face au chômage
+  file: 2.snc.svg
+  website: https://snc.asso.fr/
+- name: Association pour le droit à l’initiative économique
+  file: 3.adie.svg
+  website: https://www.adie.org/
+- name: Tirelires d'avenir
+  file: 4.tirelires-davenir.svg
+  website: https://www.tireliresdavenir.com/
+- name: Secours catholique
+  file: 5.secours-catholique.svg
+  website: https://www.secours-catholique.org/
+- name: Action contre la faim
+  file: 6.Action-contre-la-faim.svg
+  website: https://www.actioncontrelafaim.org/
+- name: Boomforest
+  file: 7.boomforest.svg
+  website: https://boomforest.org
+- name: Emmaüs
+  file: 8.emmaus.svg
+  website: https://emmaus-france.org/
+- name: Médecins sans frontières
+  file: 9.msf.svg
+  website: https://www.msf.fr/
+- name: Aide aux jeunes diabétiques
+  file: 10.ajd.svg
+  website: https://www.ajd-diabete.fr/
+- name: AFM Téléthon
+  file: 11.afm-telethon.svg
+  website: https://www.afm-telethon.fr
+- name: Greenpeace
+  file: 12.greenpeace.svg
+  website: https://www.greenpeace.fr/
+- name: Croix rouge
+  file: 13.croix-rouge.svg
+  website: https://www.croix-rouge.fr/
+- name: Association Gregory Lemarchal
+  file: 14.gregory-lemarchal.svg
+  website: https://www.association-gregorylemarchal.org/
+- name: Univers sel
+  file: 15.univers-sel.svg
+  website: https://universsel.org/
+- name: SPA
+  file: 16.spa.svg
+  website: https://www.la-spa.fr/
+- name: Framasoft
+  file: 17.framasoft.svg
+  website: https://framasoft.org
+- name: Assiettes végétales
+  file: 18.assiettes-vegetales.svg
+  website: https://assiettesvegetales.org/
+- name: Convergence Animaux Politique
+  file: 19.cap.svg
+  website: https://convergence-animaux-politique.fr/
+- name: Altruisme Efficace France
+  file: 20.aef.svg
+  website: https://www.altruismeefficacefrance.org/
+- name: Effisciences
+  file: 21.effisciences.svg
+  website: https://www.effisciences.org/
+- name: Paris Animaux Zoopolis
+  file: 22.paz.svg
+  website: https://zoopolis.fr/
+- name: Organisation pour la prévention de la cécité
+  file: 23.opc.png
+  website: https://opc.ong/
+- name: Amnesty International
+  file: 24.amnesty.svg
+  website: https://www.amnesty.fr/
+- name: World Wide Fund for Nature France
+  file: 25.wwf.svg
+  website: https://www.wwf.fr/
+- name: Unicef
+  file: 26.unicef.svg
+  website: https://www.unicef.fr/
+- name: Oxfam
+  file: 27.oxfam.svg
+  website: https://www.oxfamfrance.org/
+- name: Sidaction
+  file: 28.sidaction.svg
+  website: https://www.sidaction.org/
+- name: Ligue des droits de l'homme
+  file: 29.ldh.png
+  website: https://www.ldh-france.org/

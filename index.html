@@ -1,8 +1,8 @@
 ---
-  title: Benefactorum | Accueil
+title: Benefactorum | Accueil
 ---
 
-<div class="hero">
+<section class="hero">
   <div class="container">
     <div class="text-section">
       <h1>
@@ -15,4 +15,73 @@
     </div>
     <img src="./assets/images/dylan-sauerwein-5oog6pFHD_s-unsplash 1.png" alt="Happy Donor">
   </div>
-</div>
+</section>
+
+<section class="value-offer">
+  <h2>
+    Sur Benefactorum, donnez à
+    <span class="xxl">toutes</span>
+    les associations d’intérêt général qui vous importent !
+  </h2>
+  <div class="charities">
+    {% for charity in site.data.charities %}
+    <a href="{{ charity.website }}" target="_blank" title="{{ charity.name }}">
+      <img src="./assets/images/charities/{{ charity.file }}" alt="{{ charity.name }}">
+    </a>
+    {% endfor %}
+  </div>
+
+  <h2>
+    Ça n’a jamais été aussi
+    <span class="xxl">facile !</span>
+  </h2>
+  <div class="cards-container"></div>
+</section>
+
+<script>
+  window.addEventListener('load', () => {
+    const speed = 1; // 2 pixels per frame at 60 frames per second
+    const banner = document.getElementsByClassName('charities')[0];
+
+    // build images array
+    let images = [...banner.getElementsByTagName('a')];
+    let real_images = [...banner.querySelectorAll('img')];
+
+    // initialize images positions
+    let total_width = 0
+    let rects = real_images.map((img, index) => {
+      const rect = {
+        left: total_width,
+        width: img.width + 64,
+      };
+
+      total_width += rect.width
+
+      return rect;
+    });
+
+    function animate() {
+      const l = images.length;
+      for (let i = 0; i < l; i++) {
+        const img = images[i];
+        const rect = rects[i];
+        rect.left -= speed;
+        if (rect.left + rect.width < 0) { // this image if fully overflowing left, put it at the end of the image list both in position and in images and rects
+          const lastRect = rects[rects.length - 1];
+          rect.left = lastRect.left + lastRect.width;
+          images = images.slice(1, l);
+          images.push(img);
+          rects = rects.slice(1, l);
+          rects.push(rect);
+          i--;
+        }
+
+        // change the actual image style according to new rect value
+        img.style.left = rect.left + 'px';
+      };
+      requestAnimationFrame(animate);
+    }
+
+    animate();
+  });
+</script>

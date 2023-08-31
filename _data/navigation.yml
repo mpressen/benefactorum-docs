@@ -3,4 +3,6 @@
 - name: La mission
   link: /la-mission.html
 - name: FAQ
-  link: /
+  link: \#foire-aux-questions
+- name : blog
+  link: \#blog
