@@ -11,6 +11,16 @@
 body {
   font-family: "Montserrat";
   background-color: #F1F3F3;
+  color: #003333;
+}
+
+a {
+  text-decoration: none;
+  color: #003333;
+  text-align: center;
+}
+a:hover {
+  text-decoration: underline;
 }
 
 .button {
@@ -19,25 +29,13 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 8px;
-  background: var(--primary-color, #008080);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background-color: #008080;
   color: white;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 header {
   background-color: white;
-}
-header a {
-  text-decoration: none;
-  color: #003333;
-}
-header .sign-up {
-  display: none;
-}
-@media only screen and (min-width: 886px) {
-  header .sign-up {
-    display: flex;
-  }
 }
 header .topnav {
   margin: auto;
@@ -48,22 +46,24 @@ header .topnav {
   justify-content: space-between;
   align-items: center;
 }
-header .topnav .nav-menu {
+header .topnav nav {
   display: none;
   width: 100%;
 }
 @media only screen and (min-width: 743px) {
-  header .topnav .nav-menu {
+  header .topnav nav {
     display: flex;
     justify-content: center;
     gap: 32px;
   }
 }
-header .topnav .nav-menu a {
-  text-align: center;
+header .topnav .sign-up {
+  display: none;
 }
-header .topnav .nav-menu a:hover {
-  text-decoration: underline;
+@media only screen and (min-width: 886px) {
+  header .topnav .sign-up {
+    display: flex;
+  }
 }
 header .hamburger-lines {
   cursor: pointer;
@@ -78,20 +78,20 @@ header .hamburger-lines {
     display: none;
   }
 }
-header .topnav .hamburger-lines .line {
+header .hamburger-lines .line {
   height: 4px;
   width: 100%;
   border-radius: 10px;
-  background: #003333;
+  background-color: #003333;
 }
-header .topnav .hamburger-lines .line1 {
+header .hamburger-lines .line1 {
   transform-origin: 0% 0%;
   transition: transform 0.4s ease-in-out;
 }
-header .topnav .hamburger-lines .line2 {
+header .hamburger-lines .line2 {
   transition: transform 0.2s ease-in-out;
 }
-header .topnav .hamburger-lines .line3 {
+header .hamburger-lines .line3 {
   transform-origin: 0% 100%;
   transition: transform 0.4s ease-in-out;
 }
@@ -107,31 +107,24 @@ header .sandwitch-menu {
 header .sandwitch-menu a {
   color: #F1F3F3;
 }
-header .sandwitch-menu a:hover {
-  text-decoration: underline;
-}
 
 footer {
   margin-top: 64px;
   display: flex;
   justify-content: center;
   background-color: #003333;
+  color: #F1F3F3;
+}
+footer a {
+  color: #F1F3F3;
 }
 footer .container {
-  color: #F1F3F3;
   width: 100%;
   max-width: 1536px;
   display: flex;
   flex-direction: column;
   padding: 0px 8px;
   gap: 16px;
-}
-footer .container a {
-  color: #F1F3F3;
-  text-decoration: none;
-}
-footer .container a:hover {
-  text-decoration: underline;
 }
 footer .container .nav-links {
   padding: 8px 0px;
@@ -167,9 +160,6 @@ footer .container .nav-links .socials {
   footer .container .nav-links .socials {
     gap: 8px;
   }
-}
-footer .container .nav-links .socials a:hover {
-  text-decoration: none;
 }
 footer .container .nav-links .socials .reseau {
   width: 30px;
