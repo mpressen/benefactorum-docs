@@ -72,6 +72,36 @@ section {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
+.semi-bold {
+  font-weight: 600;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 64px;
+  flex-wrap: wrap;
+
+  .small-cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+    flex-wrap: wrap;
+
+    .card {
+      display: flex;
+      width: 240px;
+      // height: 292px;
+      padding: 32px;
+      flex-direction: column;
+      gap: 32px;
+      border-radius: 32px;
+      background-color: $website-background;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+  }
+}
+
 
 .value-offer {
   // max-width: 1536px;
@@ -89,10 +119,10 @@ section {
     width: 100%;
     margin-bottom: 64px;
     margin-top: 64px;
-  }
 
-  .charities a {
-    position: absolute;
+    a {
+      position: absolute;
+    }
   }
 }
 

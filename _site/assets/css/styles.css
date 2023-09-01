@@ -63,6 +63,33 @@ section {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
+.semi-bold {
+  font-weight: 600;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 64px;
+  flex-wrap: wrap;
+}
+.cards-container .small-cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 64px;
+  flex-wrap: wrap;
+}
+.cards-container .small-cards-container .card {
+  display: flex;
+  width: 240px;
+  padding: 32px;
+  flex-direction: column;
+  gap: 32px;
+  border-radius: 32px;
+  background-color: #F1F3F3;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
 .value-offer {
   background-color: white;
   flex-direction: column;
