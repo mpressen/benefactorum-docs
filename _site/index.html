@@ -205,22 +205,78 @@
   <div class="cards-container">
     <div class="small-cards-container">
       <div class="card">
-        <img src="./assets/images/value-offer/simple.svg" alt="Simple">
-        <h2 class='semi-bold'>Simple</h2>
+        <div class="recto">
+          <img src="./assets/images/value-offer/simple.svg" alt="Simple">
+          <h2 class='semi-bold'>Simple</h2>
+        </div>
+        <div class="verso">
+          <p>
+            1 plateforme.<br>
+            1 interlocuteur.<br>
+            Tous vos dons.
+          </p>
+          <p>
+            Benefactorum<br>
+            vous accompagne<br>
+            de A à Z.
+          </p>
+        </div>
       </div>
       <div class="card">
-        <img src="./assets/images/value-offer/en-confiance.svg" alt="Simple">
-        <h2 class='semi-bold'>En confiance</h2>
+        <div class="recto">
+          <img src="./assets/images/value-offer/en-confiance.svg" alt="En confiance">
+          <h2 class='semi-bold'>En confiance</h2>
+        </div>
+        <div class="verso">
+          <p>
+            Benefactorum<br>
+            prend en charge<br>
+            les frais de transaction.
+          </p>
+          <p>
+            Votre don est<br>
+            transparent,<br>
+            efficace<br>
+            et sécurisé.
+          </p>
+        </div>
       </div>
     </div>
     <div class="small-cards-container">
       <div class="card">
-        <img src="./assets/images/value-offer/accessible.svg" alt="Simple">
-        <h2 class='semi-bold'>Accessible</h2>
+        <div class="recto">
+          <img src="./assets/images/value-offer/accessible.svg" alt="Accessible">
+          <h2 class='semi-bold'>Accessible</h2>
+        </div>
+        <div class="verso">
+          <p>
+            Donnez<br>
+            à partir de 1 €.
+          </p>
+          <p>
+            Gagnez des dons<br>
+            en parrainant<br>
+            vos proches.
+          </p>
+        </div>
       </div>
       <div class="card">
-        <img src="./assets/images/value-offer/gratifiant.svg" alt="Simple">
-        <h2 class='semi-bold'>Gratifiant</h2>
+        <div class="recto">
+          <img src="./assets/images/value-offer/gratifiant.svg" alt="Gratifiant">
+          <h2 class='semi-bold'>Gratifiant</h2>
+        </div>
+        <div class="verso">
+          <p>
+            Visualisez<br>
+            votre impact<br>
+            dans le temps.
+          </p>
+          <p>
+            Embarquez dans une<br>
+            expérience de don<br>
+            positive et ludique.
+          </p>
+        </div>
       </div>
     </div>
   </div>
@@ -267,7 +323,38 @@
         // change the actual image style according to new rect value
         img.style.left = rect.left + 'px';
       };
+
+
       requestAnimationFrame(animate);
+    }
+
+    var cards = document.querySelectorAll('.card');
+
+    cards.forEach((card, index) => {
+      setTimeout(
+        setFlashVersoLoop,
+        3000 * index,
+        card
+      );
+    });
+
+
+    function setFlashVersoLoop(card) {
+      flashVerso(card)
+      setInterval(flashVerso, 12000, card);
+    }
+
+    function flashVerso(card) {
+      toggle_hovered_class(card)
+      setTimeout(
+        toggle_hovered_class,
+        3000,
+        card
+      );
+    }
+
+    function toggle_hovered_class(card) {
+      card.classList.toggle("hovered");
     }
 
     animate();

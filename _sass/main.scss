@@ -91,13 +91,56 @@ section {
     .card {
       display: flex;
       width: 240px;
-      // height: 292px;
+      height: 292px;
       padding: 32px;
       flex-direction: column;
       gap: 32px;
       border-radius: 32px;
       background-color: $website-background;
-      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+      // box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+      transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+      .verso {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        flex: 1 0 0;
+        text-align: center;
+        gap: 32px;
+
+      }
+    }
+
+    .card::after {
+      content: "";
+      border-radius: 32px;
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      opacity: 0;
+      transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    .card:hover, .card:active, .hovered {
+      transform: scale(1.10, 1.10);
+
+      .verso {
+        display: flex;
+      }
+
+      .recto {
+        display: none;
+      }
+    }
+
+    .card:hover::after, .card:active::after, .hovered::after {
+      opacity: 1;
     }
   }
 }
