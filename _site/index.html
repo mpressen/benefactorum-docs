@@ -284,28 +284,30 @@
 
 <script>
   window.addEventListener('load', () => {
-  const speed = 1; // 2 pixels per frame at 60 frames per second
-const banner = document.getElementsByClassName('charities')[0];
+  const banner = document.querySelector('.charities');
+let images = [...banner.querySelectorAll('a')];
 
-// build images array
-let images = [...banner.getElementsByTagName('a')];
-let real_images = [...banner.querySelectorAll('img')];
+let rects = (function compute_images_positions() {
+  let total_width = 0
+  let real_images = [...banner.querySelectorAll('img')];
 
-// initialize images positions
-let total_width = 0
-let rects = real_images.map((img, index) => {
-  const rect = {
-    left: total_width,
-    width: img.width + 64,
-  };
+  return real_images.map((img) => {
+    const rect = {
+      left: total_width,
+      width: img.width + 64,
+    };
 
-  total_width += rect.width
+    total_width += rect.width
 
-  return rect;
-});
+    return rect;
+  });
+})();
+
+scrolling_banner_animate();
 
 function scrolling_banner_animate() {
   const l = images.length;
+  const speed = 1; // 1 pixel per frame at 60 frames per second
   for (let i = 0; i < l; i++) {
     const img = images[i];
     const rect = rects[i];
@@ -323,71 +325,66 @@ function scrolling_banner_animate() {
     // change the actual image style according to new rect value
     img.style.left = rect.left + 'px';
   };
+  banner.style.display = "flex";
 
 
   requestAnimationFrame(scrolling_banner_animate);
 }
-scrolling_banner_animate();
 
-  let timeIds = [];
-function test() {
+  const value_offer = document.querySelector(".cards-container");
+const cards = document.querySelectorAll('.card');
+let timeIds = [];
+
+value_offer.addEventListener("mouseover", clear, false);
+value_offer.addEventListener("mouseout", init, false);
+init();
+
+
+function init() {
   let timeId = setTimeout(value_offer_animate, 1000);
   timeIds.push(timeId)
+
+  function value_offer_animate() {
+    cards.forEach((card, index) => {
+      let timeId = setTimeout(
+        setFlashVersoLoop,
+        3000 * index,
+        card
+      );
+      timeIds.push(timeId)
+    });
+
+
+    function setFlashVersoLoop(card) {
+      flashVerso(card)
+      let timeId = setInterval(flashVerso, 12000, card);
+      timeIds.push(timeId)
+    }
+
+    function flashVerso(card) {
+      toggle_hovered_class(card)
+      let timeId = setTimeout(
+        toggle_hovered_class,
+        3000,
+        card
+      );
+      timeIds.push(timeId)
+    }
+
+    function toggle_hovered_class(card) {
+      card.classList.toggle("hovered");
+    }
+  };
 }
 
-function value_offer_animate() {
-  var cards = document.querySelectorAll('.card');
 
-  cards.forEach((card, index) => {
-    let timeId = setTimeout(
-      setFlashVersoLoop,
-      3000 * index,
-      card
-    );
-    timeIds.push(timeId)
-  });
-
-
-  function setFlashVersoLoop(card) {
-    flashVerso(card)
-    let timeId = setInterval(flashVerso, 12000, card);
-    timeIds.push(timeId)
-  }
-
-  function flashVerso(card) {
-    toggle_hovered_class(card)
-    let timeId = setTimeout(
-      toggle_hovered_class,
-      3000,
-      card
-    );
-    timeIds.push(timeId)
-  }
-
-  function toggle_hovered_class(card) {
-    card.classList.toggle("hovered");
-  }
-};
-test();
-
-
-
-var item = document.querySelector(".cards-container");
-item.addEventListener("mouseover", func, false);
-item.addEventListener("mouseout", func2, false);
-
-function func() {
+function clear() {
   timeIds.forEach((id) => {
     clearTimeout(id);
   });
-  var cards = document.querySelectorAll('.card');
   cards.forEach((card) => {
     card.classList.remove("hovered");
   });
-}
-
-function func2() {
-  test()
 }
 
 });

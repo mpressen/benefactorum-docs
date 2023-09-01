@@ -1,25 +1,27 @@
-const speed = 1; // 2 pixels per frame at 60 frames per second
-const banner = document.getElementsByClassName('charities')[0];
+const banner = document.querySelector('.charities');
+let images = [...banner.querySelectorAll('a')];
 
-// build images array
-let images = [...banner.getElementsByTagName('a')];
-let real_images = [...banner.querySelectorAll('img')];
+let rects = (function compute_images_positions() {
+  let total_width = 0
+  let real_images = [...banner.querySelectorAll('img')];
 
-// initialize images positions
-let total_width = 0
-let rects = real_images.map((img, index) => {
-  const rect = {
-    left: total_width,
-    width: img.width + 64,
-  };
+  return real_images.map((img) => {
+    const rect = {
+      left: total_width,
+      width: img.width + 64,
+    };
 
-  total_width += rect.width
+    total_width += rect.width
 
-  return rect;
-});
+    return rect;
+  });
+})();
+
+scrolling_banner_animate();
 
 function scrolling_banner_animate() {
   const l = images.length;
+  const speed = 1; // 1 pixel per frame at 60 frames per second
   for (let i = 0; i < l; i++) {
     const img = images[i];
     const rect = rects[i];
@@ -37,8 +39,8 @@ function scrolling_banner_animate() {
     // change the actual image style according to new rect value
     img.style.left = rect.left + 'px';
   };
+  banner.style.display = "flex";
 
 
   requestAnimationFrame(scrolling_banner_animate);
 }
-scrolling_banner_animate();

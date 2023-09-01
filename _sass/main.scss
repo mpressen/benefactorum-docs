@@ -156,7 +156,7 @@ section {
   overflow: hidden;
 
   .charities {
-    display: flex;
+    display: none; // JS makes it flex
     align-items: center;
     position: relative;
     width: 100%;

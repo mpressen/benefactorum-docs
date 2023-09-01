@@ -134,7 +134,7 @@ section {
   overflow: hidden;
 }
 .value-offer .charities {
-  display: flex;
+  display: none;
   align-items: center;
   position: relative;
   width: 100%;
