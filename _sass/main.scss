@@ -3,6 +3,11 @@
   src: url("../fonts/Montserrat-Regular.ttf");
 }
 
+@font-face {
+  font-family: "MontserratSemiBold";
+  src: url("../fonts/Montserrat-SemiBold.ttf");
+}
+
 $primary-color: #008080;
 $secondary-color: #FFCB60;
 $font-color: #003333;
@@ -40,14 +45,29 @@ body {
     font-weight: normal;
     text-align: center;
     min-width: 312px;
+    line-height: 48px;
   }
 
   h2 {
     font-size: 24px;
     font-weight: normal;
-    line-height: 36px;
     text-align: center;
     min-width: 312px;
+  }
+
+  h3 {
+    font-size: 16px;
+    font-weight: normal;
+  }
+
+  h4 {
+    font-size: 16px;
+    // margin-bottom: 8px;
+    line-height: 24px;
+  }
+
+  p {
+    line-height: 24px;
   }
 
   section {
@@ -58,14 +78,17 @@ body {
 
   .xl {
     font-size: 24px;
+    line-height: 36px;
   }
 
   .xxl {
     font-size: 32px;
+    line-height: 48px;
   }
 
   .xxxl {
     font-size: 48px;
+    line-height: 64px;
   }
 
   .button {
@@ -84,7 +107,11 @@ body {
   }
 
   .semi-bold {
-    font-weight: 600;
+    font-family: "MontserratSemiBold";
+  }
+
+  .max_width {
+    max-width: 1536px;
   }
 
   .cards-container {
@@ -113,14 +140,18 @@ body {
         box-shadow: 0 4px 2px rgba(0, 0, 0, 0.1);
         transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 
+        .recto {
+          margin: auto;
+          text-align: center;
+        }
+
         .verso {
-          display: none;
+          display: none; // flex on hover/active states
           flex-direction: column;
           justify-content: center;
           flex: 1 0 0;
           text-align: center;
           gap: 32px;
-
         }
       }
 
@@ -159,6 +190,33 @@ body {
       }
     }
   }
+
+  .step {
+    width: 100%;
+    min-width: 312px;
+    display: flex;
+    padding: 0px 32px;
+    align-items: center;
+    gap: 16px;
+    border-radius: 100px;
+    background-color: $secondary-color;
+    text-wrap: wrap;
+
+    .number-step {
+      width: 37px;
+      text-align: center;
+      font-size: 64px;
+    }
+  }
+
+  .step-2 {
+    background-color: $primary-color;
+    color: $website-background;
+
+    .number-step {
+      color: $website-background;
+    }
+  }
 }
 
 .quote {
@@ -191,10 +249,58 @@ body {
   }
 }
 
+.how-it-really-works {
+  justify-content: center;
+  background-color: white;
+
+  .container {
+    width: 100%;
+    max-width: 1280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 8px;
+    gap: 64px;
+
+    .step {
+      h3 {
+        padding: 24px 0px;
+      }
+    }
+
+    ul {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      gap: 32px;
+
+      li {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        .yellow {
+          filter: invert(87%) sepia(65%) saturate(6734%) hue-rotate(311deg) brightness(103%) contrast(103%);
+        }
+
+        .green {
+          filter: invert(34%) sepia(23%) saturate(5116%) hue-rotate(155deg) brightness(87%) contrast(101%);
+        }
+
+        .check {
+          @media only screen and (max-width: 480px) {
+            display: none;
+          }
+        }
+      }
+
+    }
+  }
+}
+
 .how-it-works {
   flex-direction: column;
   align-items: center;
-
 
   .main-content {
     display: flex;
@@ -214,7 +320,6 @@ body {
           width: 529px;
         }
       }
-
     }
 
     .steps {
@@ -224,31 +329,10 @@ body {
       min-width: 312px;
 
       .step {
-        display: flex;
-        padding: 0px 32px;
-        align-items: center;
-        gap: 16px;
-        border-radius: 100px;
-        background-color: $secondary-color;
-        text-wrap: wrap;
-
-        .number-step {
-          width: 37px;
-          text-align: center;
-          font-size: 64px;
-        }
+        width: auto;
 
         p {
           padding: 16px 0px;
-        }
-      }
-
-      .step-2 {
-        background-color: $primary-color;
-        color: $website-background;
-
-        .number-step {
-          color: $website-background;
         }
       }
     }
@@ -271,7 +355,6 @@ body {
 }
 
 .value-offer {
-  // max-width: 1536px;
   background-color: white;
   flex-direction: column;
   align-items: center;
@@ -419,7 +502,7 @@ footer {
       flex-direction: column;
       gap: 32px;
 
-      @media only screen and (min-width: 1039px) {
+      @media only screen and (min-width: 987px) {
         flex-direction: row;
       }
 
@@ -432,7 +515,7 @@ footer {
         align-items: center;
         flex-direction: column;
 
-        @media only screen and (min-width: 657px) {
+        @media only screen and (min-width: 605px) {
           flex-direction: row;
         }
       }
@@ -441,14 +524,14 @@ footer {
         display: flex;
         gap: 64px;
 
-        @media only screen and (min-width: 1039px) {
+        @media only screen and (min-width: 987px) {
           gap: 8px;
         }
 
         .reseau {
           width: 30px;
 
-          @media only screen and (min-width: 1039px) {
+          @media only screen and (min-width: 987px) {
             width: 20px
           }
         }
