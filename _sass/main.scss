@@ -39,6 +39,7 @@ body {
     font-size: 32px;
     font-weight: normal;
     text-align: center;
+    min-width: 312px;
   }
 
   h2 {
@@ -46,7 +47,7 @@ body {
     font-weight: normal;
     line-height: 36px;
     text-align: center;
-    min-width: 300px;
+    min-width: 312px;
   }
 
   section {
@@ -160,6 +161,18 @@ body {
   }
 }
 
+.quote {
+  flex-direction: column;
+  align-items: center;
+
+  img {
+    @media only screen and (max-width: 361px) {
+      width: 100%;
+      min-width: 312px;
+    }
+  }
+}
+
 .non-profit {
   background-color: white;
   flex-direction: column;
@@ -174,7 +187,7 @@ body {
   img {
     width: 100%;
     max-width: 599px;
-    min-width: 300px;
+    min-width: 312px;
   }
 }
 
@@ -208,7 +221,7 @@ body {
       display: flex;
       flex-direction: column;
       gap: 32px;
-      min-width: 300px;
+      min-width: 312px;
 
       .step {
         display: flex;
@@ -289,7 +302,6 @@ body {
     flex-wrap: wrap;
 
     .text-section {
-      min-width: 320px;
       display: flex;
       flex-direction: column;
       justify-content: center;

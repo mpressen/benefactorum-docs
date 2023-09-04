@@ -28,13 +28,14 @@ body h1 {
   font-size: 32px;
   font-weight: normal;
   text-align: center;
+  min-width: 312px;
 }
 body h2 {
   font-size: 24px;
   font-weight: normal;
   line-height: 36px;
   text-align: center;
-  min-width: 300px;
+  min-width: 312px;
 }
 body section {
   display: flex;
@@ -132,6 +133,17 @@ body .cards-container .small-cards-container .hovered::after {
   opacity: 1;
 }
 
+.quote {
+  flex-direction: column;
+  align-items: center;
+}
+@media only screen and (max-width: 361px) {
+  .quote img {
+    width: 100%;
+    min-width: 312px;
+  }
+}
+
 .non-profit {
   background-color: white;
   flex-direction: column;
@@ -145,7 +157,7 @@ body .cards-container .small-cards-container .hovered::after {
 .non-profit img {
   width: 100%;
   max-width: 599px;
-  min-width: 300px;
+  min-width: 312px;
 }
 
 .how-it-works {
@@ -173,7 +185,7 @@ body .cards-container .small-cards-container .hovered::after {
   display: flex;
   flex-direction: column;
   gap: 32px;
-  min-width: 300px;
+  min-width: 312px;
 }
 .how-it-works .main-content .steps .step {
   display: flex;
@@ -242,7 +254,6 @@ body .cards-container .small-cards-container .hovered::after {
   flex-wrap: wrap;
 }
 .hero .container .text-section {
-  min-width: 320px;
   display: flex;
   flex-direction: column;
   justify-content: center;
