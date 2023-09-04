@@ -2,13 +2,15 @@ const value_offer = document.querySelector(".cards-container");
 const cards = document.querySelectorAll('.card');
 let timeIds = [];
 
-value_offer.addEventListener("mouseover", clear, false);
-value_offer.addEventListener("mouseout", init, false);
+cards.forEach((card) => {
+  card.addEventListener("mouseover", clear, false);
+  card.addEventListener("mouseout", init, false);
+});
+window.addEventListener("visibilitychange", reset, false);
 init();
 
-
 function init() {
-  let timeId = setTimeout(value_offer_animate, 1000);
+  let timeId = setTimeout(value_offer_animate, 500);
   timeIds.push(timeId)
 
   function value_offer_animate() {
@@ -44,7 +46,6 @@ function init() {
   };
 }
 
-
 function clear() {
   timeIds.forEach((id) => {
     clearTimeout(id);
@@ -52,4 +53,9 @@ function clear() {
   cards.forEach((card) => {
     card.classList.remove("hovered");
   });
+}
+
+function reset() {
+  clear();
+  init();
 }
