@@ -27,11 +27,14 @@ body a:hover {
 body h1 {
   font-size: 32px;
   font-weight: normal;
+  text-align: center;
 }
 body h2 {
   font-size: 24px;
   font-weight: normal;
   line-height: 36px;
+  text-align: center;
+  min-width: 300px;
 }
 body section {
   display: flex;
@@ -56,6 +59,9 @@ body .button {
   background-color: #008080;
   color: white;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+body .margin-top {
+  margin-top: 64px;
 }
 body .semi-bold {
   font-weight: 600;
@@ -126,12 +132,25 @@ body .cards-container .small-cards-container .hovered::after {
   opacity: 1;
 }
 
+.non-profit {
+  background-color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.non-profit .button {
+  color: #003333;
+  background-color: #FFCB60;
+}
+.non-profit img {
+  width: 100%;
+  max-width: 599px;
+  min-width: 300px;
+}
+
 .how-it-works {
   flex-direction: column;
   align-items: center;
-}
-.how-it-works h2 {
-  text-align: center;
 }
 .how-it-works .main-content {
   display: flex;
@@ -154,6 +173,7 @@ body .cards-container .small-cards-container .hovered::after {
   display: flex;
   flex-direction: column;
   gap: 32px;
+  min-width: 300px;
 }
 .how-it-works .main-content .steps .step {
   display: flex;
@@ -192,15 +212,11 @@ body .cards-container .small-cards-container .hovered::after {
 .how-it-works .main-content .info p {
   text-align: center;
 }
-.how-it-works a {
-  margin-top: 64px;
-}
 
 .value-offer {
   background-color: white;
   flex-direction: column;
   align-items: center;
-  text-align: center;
   overflow: hidden;
 }
 .value-offer .charities {
@@ -231,7 +247,6 @@ body .cards-container .small-cards-container .hovered::after {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
   gap: 64px;
   flex: 1 0 0;
 }

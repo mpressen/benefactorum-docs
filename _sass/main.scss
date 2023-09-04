@@ -38,13 +38,15 @@ body {
   h1 {
     font-size: 32px;
     font-weight: normal;
-    // line-height: 48px;
+    text-align: center;
   }
 
   h2 {
     font-size: 24px;
     font-weight: normal;
     line-height: 36px;
+    text-align: center;
+    min-width: 300px;
   }
 
   section {
@@ -74,6 +76,10 @@ body {
     background-color: $primary-color;
     color: white;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  .margin-top {
+    margin-top: 64px;
   }
 
   .semi-bold {
@@ -154,13 +160,28 @@ body {
   }
 }
 
+.non-profit {
+  background-color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .button {
+    color: $font-color;
+    background-color: $secondary-color;
+  }
+
+  img {
+    width: 100%;
+    max-width: 599px;
+    min-width: 300px;
+  }
+}
+
 .how-it-works {
   flex-direction: column;
   align-items: center;
 
-  h2 {
-    text-align: center;
-  }
 
   .main-content {
     display: flex;
@@ -187,6 +208,7 @@ body {
       display: flex;
       flex-direction: column;
       gap: 32px;
+      min-width: 300px;
 
       .step {
         display: flex;
@@ -233,11 +255,6 @@ body {
       }
     }
   }
-
-  a {
-    margin-top: 64px;
-  }
-
 }
 
 .value-offer {
@@ -245,7 +262,6 @@ body {
   background-color: white;
   flex-direction: column;
   align-items: center;
-  text-align: center;
   overflow: hidden;
 
   .charities {
@@ -278,7 +294,6 @@ body {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      text-align: center;
       gap: 64px;
       flex: 1 0 0;
     }
