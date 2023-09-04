@@ -6,7 +6,15 @@ cards.forEach((card) => {
   card.addEventListener("mouseover", clear, false);
   card.addEventListener("mouseout", init, false);
 });
-window.addEventListener("visibilitychange", reset, false);
+
+document.addEventListener("visibilitychange", () => {
+  if (document.visibilityState === "visible") {
+    init();
+  } else {
+    clear();
+  }
+});
+
 init();
 
 function init() {
@@ -53,9 +61,4 @@ function clear() {
   cards.forEach((card) => {
     card.classList.remove("hovered");
   });
-}
-
-function reset() {
-  clear();
-  init();
 }
