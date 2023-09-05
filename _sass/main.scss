@@ -329,6 +329,33 @@ body {
         }
       }
     }
+
+    .taxes {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 64px;
+      flex-wrap: wrap;
+
+      p {
+        max-width: 657px;
+      }
+
+      .did-you-know {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        padding: 16px;
+        border-radius: 32px;
+        background-color: $website-background;
+        justify-content: center;
+
+        @media only screen and (max-width: 612px) {
+          display: block;
+          text-align: center;
+        }
+      }
+    }
   }
 
   @media only screen and (max-width: 612px) {
