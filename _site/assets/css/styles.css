@@ -85,9 +85,6 @@ body .margin-top {
 body .semi-bold {
   font-family: "MontserratSemiBold";
 }
-body .max_width {
-  max-width: 1536px;
-}
 body .cards-container {
   display: flex;
   justify-content: center;
@@ -159,14 +156,12 @@ body .cards-container .small-cards-container .hovered::after {
 }
 body .step {
   width: 100%;
-  min-width: 312px;
   display: flex;
   padding: 0px 32px;
   align-items: center;
   gap: 16px;
   border-radius: 100px;
   background-color: #FFCB60;
-  text-wrap: wrap;
 }
 body .step .number-step {
   width: 37px;
@@ -218,17 +213,23 @@ body .step-2 .number-step {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px 8px;
   gap: 64px;
 }
 .how-it-really-works .container .step h3 {
   padding: 24px 0px;
 }
+.how-it-really-works .container .step-2, .how-it-really-works .container .step-3 {
+  margin-top: 64px;
+}
 .how-it-really-works .container ul {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  align-items: flex-start;
   gap: 32px;
+}
+.how-it-really-works .container ul.bigger-gap {
+  gap: 64px;
 }
 .how-it-really-works .container ul li {
   display: flex;
@@ -244,6 +245,51 @@ body .step-2 .number-step {
 @media only screen and (max-width: 480px) {
   .how-it-really-works .container ul li .check {
     display: none;
+  }
+}
+.how-it-really-works .container ul .value-offer-detail {
+  display: flex;
+  justify-content: center;
+  gap: 64px;
+  align-items: center;
+}
+@media only screen and (max-width: 885px) {
+  .how-it-really-works .container ul .value-offer-detail {
+    flex-wrap: wrap;
+  }
+}
+.how-it-really-works .container ul .value-offer-detail .card {
+  display: flex;
+  margin: auto;
+  padding: 32px;
+  flex-direction: column;
+  gap: 32px;
+  border-radius: 32px;
+  background-color: #F1F3F3;
+  text-align: center;
+}
+.how-it-really-works .container ul .value-offer-detail ul {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.how-it-really-works .container ul .value-offer-detail ul li {
+  list-style-type: disc;
+  display: list-item;
+}
+@media only screen and (max-width: 612px) {
+  .how-it-really-works {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .how-it-really-works .container * {
+    padding: 0 4px;
+  }
+  .how-it-really-works .container li {
+    list-style-type: none !important;
+  }
+  .how-it-really-works .step {
+    border-radius: 0;
   }
 }
 
