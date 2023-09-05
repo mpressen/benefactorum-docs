@@ -176,6 +176,10 @@ body .step-2 .number-step {
   color: #F1F3F3;
 }
 
+.values {
+  background-color: white;
+}
+
 .quote {
   flex-direction: column;
   align-items: center;
@@ -212,7 +216,8 @@ body .step-2 .number-step {
 .how-it-really-works .container .step h3 {
   padding: 24px 0px;
 }
-.how-it-really-works .container .step-2, .how-it-really-works .container .step-3 {
+.how-it-really-works .container .step-2,
+.how-it-really-works .container .step-3 {
   margin-top: 64px;
 }
 .how-it-really-works .container ul {
@@ -301,7 +306,8 @@ body .step-2 .number-step {
     padding-right: 0;
     padding-left: 0;
   }
-  .how-it-really-works .container p, .how-it-really-works .container h4 {
+  .how-it-really-works .container p,
+  .how-it-really-works .container h4 {
     padding: 0 8px;
   }
   .how-it-really-works .container li {
@@ -375,6 +381,12 @@ body .step-2 .number-step {
 }
 .value-offer .charities a {
   position: absolute;
+}
+
+@media only screen and (min-width: 790px) {
+  .mission .hero {
+    height: 393px;
+  }
 }
 
 .hero {
