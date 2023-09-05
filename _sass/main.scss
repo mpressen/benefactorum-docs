@@ -216,13 +216,6 @@ body {
 .quote {
   flex-direction: column;
   align-items: center;
-
-  img {
-    @media only screen and (max-width: 361px) {
-      width: 100%;
-      min-width: 312px;
-    }
-  }
 }
 
 .non-profit {
@@ -363,8 +356,8 @@ body {
     padding-left: 0;
 
     .container {
-      * {
-        padding: 0 4px;
+      p, h4 {
+        padding: 0 8px;
       }
 
       li {
