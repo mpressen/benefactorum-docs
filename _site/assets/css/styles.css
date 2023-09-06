@@ -415,6 +415,13 @@ body .step-2 .number-step {
     flex-wrap: wrap;
   }
 }
+.mission .freins {
+  display: flex;
+  flex-direction: column;
+}
+.mission .freins .cards-container .card {
+  background-color: white;
+}
 
 .hero {
   justify-content: center;

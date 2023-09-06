@@ -86,7 +86,156 @@
       </div>
     </div>
   </section>
+
+  <section class="freins">
+    <h2>... mais il y a des<span class="xxl"> freins </span>au don !</h2>
+    <div class="cards-container">
+      <div class="small-cards-container">
+        <div class="card">
+          <div class="recto">
+            <img src="./assets/images/freins/no-trust.svg">
+            <p class='xl'>Manque de<br>
+              <span class="semi-bold">confiance</span>
+            </p>
+          </div>
+          <div class="verso">
+            <p>Où va mon argent ?</p>
+            <p>
+              Est-il<br>
+              bien utilisé ?
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="recto">
+            <img src="./assets/images/freins/no-time.svg">
+            <p class='xl'>Manque de<br>
+              <span class="semi-bold">temps</span>
+            </p>
+          </div>
+          <div class="verso">
+            <p>
+              Je suis<br>
+              hyper sollicité ...
+            </p>
+            <p>
+              Je n’ai même<br>
+              pas le temps d’y<br>
+              penser !
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="small-cards-container">
+        <div class="card">
+          <div class="recto">
+            <img src="./assets/images/freins/no-knowledge.svg">
+            <p class='xl'>Manque de<br>
+              <span class="semi-bold">connaissances</span>
+            </p>
+          </div>
+          <div class="verso">
+            <p>
+              Je ne sais pas à qui<br>
+              donner !
+            </p>
+            <p>
+              Et l’exonération<br>
+              fiscale,<br>
+              ça a l’air compliqué ...
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="recto">
+            <img src="./assets/images/freins/no-money.svg">
+            <p class='xl'>Manque de<br>
+              <span class="semi-bold">moyens</span>
+            </p>
+          </div>
+          <div class="verso">
+            <p>
+              J’ai déja du mal à<br>
+              épargner ...
+            </p>
+            <p>
+              Je serai généreux<br>
+              quand je serais riche !
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </div>
+
+<script>
+  const value_offer = document.querySelector(".cards-container");
+const cards = document.querySelectorAll('.card');
+let timeIds = [];
+
+cards.forEach((card) => {
+  card.addEventListener("mouseover", clear, false);
+  card.addEventListener("mouseout", init, false);
+});
+
+document.addEventListener("visibilitychange", () => {
+  if (document.visibilityState === "visible") {
+    init();
+  } else {
+    clear();
+  }
+});
+
+init();
+
+function init() {
+  let timeId = setTimeout(value_offer_animate, 500);
+  timeIds.push(timeId)
+
+  function value_offer_animate() {
+    cards.forEach((card, index) => {
+      let timeId = setTimeout(
+        setFlashVersoLoop,
+        3000 * index,
+        card
+      );
+      timeIds.push(timeId)
+    });
+
+
+    function setFlashVersoLoop(card) {
+      flashVerso(card)
+      let timeId = setInterval(flashVerso, 12000, card);
+      timeIds.push(timeId)
+    }
+
+    function flashVerso(card) {
+      toggle_hovered_class(card)
+      let timeId = setTimeout(
+        toggle_hovered_class,
+        3000,
+        card
+      );
+      timeIds.push(timeId)
+    }
+
+    function toggle_hovered_class(card) {
+      card.classList.toggle("hovered");
+    }
+  };
+}
+
+function clear() {
+  timeIds.forEach((id) => {
+    clearTimeout(id);
+  });
+  cards.forEach((card) => {
+    card.classList.remove("hovered");
+  });
+}
+
+</script>
 
   <footer>
   <div class="container">

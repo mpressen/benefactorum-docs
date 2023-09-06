@@ -484,6 +484,16 @@ body {
       }
     }
   }
+
+  .freins {
+    display: flex;
+    flex-direction: column;
+
+    .cards-container .card {
+      background-color: white;
+    }
+
+  }
 }
 
 .hero {
