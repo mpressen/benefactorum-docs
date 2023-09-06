@@ -172,10 +172,6 @@ body .step-2 .number-step {
   color: #F1F3F3;
 }
 
-.values {
-  background-color: white;
-}
-
 .quote {
   flex-direction: column;
   align-items: center;
@@ -399,6 +395,7 @@ body .step-2 .number-step {
   }
 }
 .mission .values {
+  background-color: white;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -414,6 +411,21 @@ body .step-2 .number-step {
   .mission .values .main {
     flex-wrap: wrap;
   }
+}
+.mission .values .main ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.mission .values .main ul li {
+  list-style-type: disc;
+  display: list-item;
+}
+.mission .values .main ul li a {
+  text-decoration: underline;
+}
+.mission .values.without-bg {
+  background-color: #F1F3F3;
 }
 .mission .freins {
   display: flex;

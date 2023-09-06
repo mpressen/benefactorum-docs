@@ -206,10 +206,6 @@ body {
   }
 }
 
-.values {
-  background-color: white;
-}
-
 .quote {
   flex-direction: column;
   align-items: center;
@@ -468,6 +464,7 @@ body {
   }
 
   .values {
+    background-color: white;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -482,8 +479,28 @@ body {
       @media only screen and (max-width: 627px) {
         flex-wrap: wrap;
       }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        li {
+          list-style-type: disc;
+          display: list-item;
+
+          a {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    &.without-bg {
+      background-color: $website-background;
     }
   }
+
 
   .freins {
     display: flex;
