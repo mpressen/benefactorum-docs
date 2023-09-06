@@ -44,35 +44,30 @@ body {
     font-size: 32px;
     font-weight: normal;
     text-align: center;
-    min-width: 312px;
-    line-height: 48px;
+    min-width: 304px;
+    line-height: 64px;
   }
 
   h2 {
     font-size: 24px;
     font-weight: normal;
     text-align: center;
-    min-width: 312px;
+    line-height: 48px;
   }
 
   h3 {
-    font-size: 16px;
     font-weight: normal;
   }
 
-  h4 {
-    font-size: 16px;
-    // margin-bottom: 8px;
-    line-height: 24px;
-  }
-
+  h4,
   p {
+    font-size: 16px;
     line-height: 24px;
   }
 
   section {
     display: flex;
-    padding: 64px;
+    padding: 64px 8px;
     gap: 64px;
   }
 
@@ -88,7 +83,6 @@ body {
 
   .xxxl {
     font-size: 48px;
-    line-height: 64px;
   }
 
   .button {
@@ -132,7 +126,6 @@ body {
         border-radius: 32px;
         background-color: $website-background;
 
-        // box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
         box-shadow: 0 4px 2px rgba(0, 0, 0, 0.1);
         transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 
@@ -300,7 +293,7 @@ body {
         gap: 64px;
         align-items: center;
 
-        @media only screen and (max-width: 885px) {
+        @media only screen and (max-width: 892px) {
           flex-wrap: wrap;
         }
 
@@ -356,24 +349,24 @@ body {
     }
   }
 
-  @media only screen and (max-width: 612px) {
-    padding-right: 0;
-    padding-left: 0;
+  @media only screen and (max-width: 1279px) {
+    padding: 64px 0px;
 
-    .container {
+    .step {
+      width: 100%;
+      border-radius: 0;
+    }
 
-      p,
-      h4 {
-        padding: 0 8px;
-      }
+    ul {
+      padding: 0 8px;
 
-      li {
-        list-style-type: none !important;
+      li ul {
+        padding: 0;
       }
     }
 
-    .step {
-      border-radius: 0;
+    .taxes p {
+      padding: 0 8px;
     }
   }
 }
@@ -432,6 +425,19 @@ body {
       }
     }
   }
+
+  @media only screen and (max-width: 546px) {
+    padding: 64px 0;
+
+    .steps {
+      width: 100%;
+    }
+
+    .step {
+      border-radius: 0;
+      padding: 0 8px;
+    }
+  }
 }
 
 .value-offer {
@@ -458,6 +464,24 @@ body {
   .hero {
     @media only screen and (min-width: 790px) {
       height: 393px;
+    }
+  }
+
+  .values {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .main {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 64px;
+
+      @media only screen and (max-width: 627px) {
+        flex-wrap: wrap;
+      }
     }
   }
 }

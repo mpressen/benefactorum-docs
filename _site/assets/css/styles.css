@@ -32,29 +32,26 @@ body h1 {
   font-size: 32px;
   font-weight: normal;
   text-align: center;
-  min-width: 312px;
-  line-height: 48px;
+  min-width: 304px;
+  line-height: 64px;
 }
 body h2 {
   font-size: 24px;
   font-weight: normal;
   text-align: center;
-  min-width: 312px;
+  line-height: 48px;
 }
 body h3 {
-  font-size: 16px;
   font-weight: normal;
 }
-body h4 {
-  font-size: 16px;
-  line-height: 24px;
-}
+body h4,
 body p {
+  font-size: 16px;
   line-height: 24px;
 }
 body section {
   display: flex;
-  padding: 64px;
+  padding: 64px 8px;
   gap: 64px;
 }
 body .xl {
@@ -67,7 +64,6 @@ body .xxl {
 }
 body .xxxl {
   font-size: 48px;
-  line-height: 64px;
 }
 body .button {
   display: flex;
@@ -252,7 +248,7 @@ body .step-2 .number-step {
   gap: 64px;
   align-items: center;
 }
-@media only screen and (max-width: 885px) {
+@media only screen and (max-width: 892px) {
   .how-it-really-works .container ul .value-offer-detail {
     flex-wrap: wrap;
   }
@@ -301,20 +297,22 @@ body .step-2 .number-step {
     text-align: center;
   }
 }
-@media only screen and (max-width: 612px) {
+@media only screen and (max-width: 1279px) {
   .how-it-really-works {
-    padding-right: 0;
-    padding-left: 0;
-  }
-  .how-it-really-works .container p,
-  .how-it-really-works .container h4 {
-    padding: 0 8px;
-  }
-  .how-it-really-works .container li {
-    list-style-type: none !important;
+    padding: 64px 0px;
   }
   .how-it-really-works .step {
+    width: 100%;
     border-radius: 0;
+  }
+  .how-it-really-works ul {
+    padding: 0 8px;
+  }
+  .how-it-really-works ul li ul {
+    padding: 0;
+  }
+  .how-it-really-works .taxes p {
+    padding: 0 8px;
   }
 }
 
@@ -364,6 +362,18 @@ body .step-2 .number-step {
 .how-it-works .main-content .info p {
   text-align: center;
 }
+@media only screen and (max-width: 546px) {
+  .how-it-works {
+    padding: 64px 0;
+  }
+  .how-it-works .steps {
+    width: 100%;
+  }
+  .how-it-works .step {
+    border-radius: 0;
+    padding: 0 8px;
+  }
+}
 
 .value-offer {
   background-color: white;
@@ -386,6 +396,23 @@ body .step-2 .number-step {
 @media only screen and (min-width: 790px) {
   .mission .hero {
     height: 393px;
+  }
+}
+.mission .values {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mission .values .main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+}
+@media only screen and (max-width: 627px) {
+  .mission .values .main {
+    flex-wrap: wrap;
   }
 }
 
