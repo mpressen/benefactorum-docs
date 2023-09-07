@@ -1,8 +1,8 @@
 - name: La plateforme
-  link: /la-plateforme.html
+  url: /la-plateforme
 - name: La mission
-  link: /la-mission.html
+  url: /la-mission
 - name: FAQ
-  link: \#foire-aux-questions
-- name : blog
-  link: \#blog
+  url: \#faq
+- name : Blog
+  url: \#blog

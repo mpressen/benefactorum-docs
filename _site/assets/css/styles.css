@@ -1,10 +1,12 @@
 @font-face {
   font-family: "Montserrat";
   src: url("../fonts/Montserrat-Regular.ttf");
+  font-display: swap;
 }
 @font-face {
   font-family: "MontserratSemiBold";
   src: url("../fonts/Montserrat-SemiBold.ttf");
+  font-display: swap;
 }
 * {
   margin: 0;
