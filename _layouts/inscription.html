@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.svg" type="image/x-icon" />
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  {% seo %}
+  {% if jekyll.environment == "production" %}
+  <!-- <script src="my-analytics-script.js"></script> -->
+  {% endif %}
+</head>
+
+<body>
+  {% include header.html %}
+  {{ content }}
+</body>
+
+</html>

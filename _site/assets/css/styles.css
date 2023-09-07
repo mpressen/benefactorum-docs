@@ -43,6 +43,7 @@ body h2 {
 }
 body h3 {
   font-weight: normal;
+  text-align: center;
 }
 body h4,
 body p {
@@ -387,6 +388,35 @@ body .step-2 .number-step {
 }
 .value-offer .charities a {
   position: absolute;
+}
+
+.sib-form {
+  padding: 64px 0px;
+}
+.sib-form .input_replaced:checked + .checkbox_tick_positive {
+  background: #008080;
+  border-color: #008080;
+}
+.sib-form .sib-container--large {
+  border-radius: 32px;
+}
+.sib-form .sib-container--large a {
+  color: #003333;
+  text-decoration: none;
+}
+.sib-form .sib-container--large a:hover {
+  text-decoration: underline;
+}
+@media only screen and (max-width: 540px) {
+  .sib-form .sib-container--large {
+    border-radius: 0;
+  }
+}
+
+.merci .hero {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 @media only screen and (min-width: 790px) {
