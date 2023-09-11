@@ -7,12 +7,12 @@
   <link rel="icon" href="favicon.svg" type="image/x-icon" />
   <title>{{ page.title }}</title>
   <link rel="stylesheet" href="/assets/css/styles.css">
-  <script type="text/javascript" src="/assets/js/header.js"></script>
+  <script defer type="text/javascript" src="/assets/js/header.js"></script>
   {% if page.url != "/merci.html" %}
   {% seo %}
   {% endif %}
   {% if jekyll.environment == "production" %}
-  <!-- <script src="my-analytics-script.js"></script> -->
+  <script defer data-domain="benefactorum.fr" src="https://plausible.io/js/script.js"></script>
   {% endif %}
 </head>
 
@@ -24,7 +24,7 @@
   </div>
 </body>
 
-<script>
+<script defer>
   {% include js/brevo.js %}
 </script>
 
