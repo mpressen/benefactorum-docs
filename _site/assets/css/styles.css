@@ -566,9 +566,26 @@ body .step-2 .number-step {
 }
 .faq .accordion button[aria-expanded=true] + .accordion-content {
   opacity: 1;
-  max-height: 23em;
+  max-height: 9em;
   transition: all 200ms linear;
   will-change: opacity, max-height;
+}
+.faq .accordion button[aria-expanded=true] + .accordion-content.plus {
+  max-height: 17em;
+}
+.faq .accordion button[aria-expanded=true] + .accordion-content.plusplus {
+  max-height: 28em;
+}
+@media only screen and (max-width: 616px) {
+  .faq .accordion button[aria-expanded=true] + .accordion-content {
+    max-height: 11em;
+  }
+  .faq .accordion button[aria-expanded=true] + .accordion-content.plus {
+    max-height: 27em;
+  }
+  .faq .accordion button[aria-expanded=true] + .accordion-content.plusplus {
+    max-height: 50em;
+  }
 }
 .faq .accordion .accordion-content {
   opacity: 0;

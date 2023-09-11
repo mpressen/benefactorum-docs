@@ -668,9 +668,29 @@ body {
 
       +.accordion-content {
         opacity: 1;
-        max-height: 23em;
+        max-height: 9em;
         transition: all 200ms linear;
         will-change: opacity, max-height;
+
+        &.plus {
+          max-height: 17em;
+        }
+
+        &.plusplus {
+          max-height: 28em;
+        }
+
+        @media only screen and (max-width: 616px) {
+          max-height: 11em;
+
+          &.plus {
+              max-height: 27em;
+            }
+
+            &.plusplus {
+              max-height: 50em;
+            }
+        }
       }
     }
 
