@@ -498,7 +498,7 @@ body .step-2 .number-step {
 }
 .faq .container {
   margin: 0 auto;
-  width: 500px;
+  width: 600px;
 }
 .faq .accordion .accordion-item {
   border-bottom: 1px solid #FFCB60;
@@ -566,7 +566,7 @@ body .step-2 .number-step {
 }
 .faq .accordion button[aria-expanded=true] + .accordion-content {
   opacity: 1;
-  max-height: 100%;
+  max-height: 23em;
   transition: all 200ms linear;
   will-change: opacity, max-height;
 }
