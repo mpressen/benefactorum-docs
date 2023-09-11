@@ -7,3 +7,9 @@ defaults:
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
+
+title: Benefactorum
+tagline: La plateforme des donateurs
+description: Découvrez la plateforme de dons qui va vous facilitez la vie !
+locale: fr_FR
+logo: /assets/images/benefactorum/full-logo.svg

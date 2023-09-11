@@ -192,6 +192,12 @@ body .step-2 .number-step {
   align-items: center;
 }
 
+.confidentialite {
+  flex-direction: column;
+  padding: 0 64px;
+  justify-content: center;
+}
+
 .non-profit {
   background-color: white;
   flex-direction: column;
