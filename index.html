@@ -25,7 +25,7 @@ title: Benefactorum
   </h2>
   <div class="charities">
     {% for charity in site.data.charities %}
-    <a href="{{ charity.website }}" target="_blank" title="{{ charity.name }}">
+    <a href="{{ charity.website }}" target="_blank" rel="noopener noreferrer" title="{{ charity.name }}">
       <img src="./assets/images/charities/{{ charity.file }}" alt="{{ charity.name }}">
     </a>
     {% endfor %}

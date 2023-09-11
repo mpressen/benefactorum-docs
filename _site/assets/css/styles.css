@@ -14,6 +14,18 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  height: 100%;
+}
+
+.full-height {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Montserrat";
   background-color: #F1F3F3;
@@ -381,7 +393,6 @@ body .step-2 .number-step {
   background-color: white;
   flex-direction: column;
   align-items: center;
-  overflow: hidden;
 }
 .value-offer .charities {
   display: none;
@@ -418,10 +429,20 @@ body .step-2 .number-step {
   }
 }
 
+.merci {
+  flex: 1 1 auto;
+}
 .merci .hero {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.merci .hero .socials {
+  display: flex;
+  gap: 32px;
+}
+.merci .hero .socials img {
+  filter: brightness(0) saturate(100%) invert(35%) sepia(15%) saturate(4488%) hue-rotate(143deg) brightness(99%) contrast(100%);
 }
 
 @media only screen and (min-width: 790px) {
@@ -473,6 +494,7 @@ body .step-2 .number-step {
 .faq {
   background-color: white;
   flex-wrap: wrap;
+  flex: 1 1 auto;
 }
 .faq .container {
   margin: 0 auto;

@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="fr">
 
 <head>
   <meta charset="utf-8">
@@ -8,16 +8,20 @@
   <title>{{ page.title }}</title>
   <link rel="stylesheet" href="/assets/css/styles.css">
   <script type="text/javascript" src="/assets/js/header.js"></script>
+  {% if page.url != "/merci.html" %}
   {% seo %}
+  {% endif %}
   {% if jekyll.environment == "production" %}
   <!-- <script src="my-analytics-script.js"></script> -->
   {% endif %}
 </head>
 
 <body>
-  {% include header.html %}
-  {{ content }}
-  {% include footer.html %}
+  <div class="full-height">
+    {% include header.html %}
+    {{ content }}
+    {% include footer.html %}
+  </div>
 </body>
 
 <script>

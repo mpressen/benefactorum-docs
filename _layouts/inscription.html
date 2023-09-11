@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="fr">
 
 <head>
   <meta charset="utf-8">
@@ -8,19 +8,13 @@
   <title>{{ page.title }}</title>
   <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
   <link rel="stylesheet" href="/assets/css/styles.css">
-  {% seo %}
   {% if jekyll.environment == "production" %}
   <!-- <script src="my-analytics-script.js"></script> -->
   {% endif %}
 </head>
 
 <body>
-  {% include header.html %}
   {{ content }}
 </body>
-
-  <script>
-    {% include js/brevo.js %}
-  </script>
 
 </html>

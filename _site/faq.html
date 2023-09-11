@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="fr">
 
 <head>
   <meta charset="utf-8">
@@ -8,6 +8,7 @@
   <title>FAQ | Benefactorum</title>
   <link rel="stylesheet" href="/assets/css/styles.css">
   <script type="text/javascript" src="/assets/js/header.js"></script>
+  
   <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>FAQ Benefactorum</title>
 <meta name="generator" content="Jekyll v4.3.2" />
@@ -23,10 +24,12 @@
 <!-- End Jekyll SEO tag -->
 
   
+  
 </head>
 
 <body>
-  <header>
+  <div class="full-height">
+    <header>
   <div class="topnav">
     <a href='/'>
       <picture>
@@ -46,12 +49,14 @@
       <a href="\#blog" title="Blog">Blog</a>
       
     </nav>
-    <a href="javascript:void(0);" class="hamburger-lines" onclick="toggleMenu()">
+    <div class="hamburger-lines" onclick="toggleMenu()">
       <span class="line line1" id="line1"></span>
       <span class="line line2" id="line2"></span>
       <span class="line line3" id="line3"></span>
-    </a>
+    </div>
+    
     <a href="/inscription" class="sign-up button">S'inscrire</a>
+    
   </div>
   <div class='sandwitch-menu' id="myLinks">
     
@@ -66,7 +71,7 @@
   </div>
 </header>
 
-  <section class="hero">
+    <section class="hero">
   <h1>Foire Aux Questions</h1>
 </section>
 <section class="faq">
@@ -246,7 +251,7 @@
   items.forEach(item => item.addEventListener('click', toggleAccordion));
 </script>
 
-  <footer>
+    <footer>
   <div class="container">
     <div class="nav-links">
       <a href="/">
@@ -271,7 +276,7 @@
         <a href="#facebook">
           <img class='reseau' src="./assets/images/socials/facebook.svg" alt="Facebook"></img>
         </a>
-        <a href="https://github.com/Benefactorum" target="_blank">
+        <a href="https://github.com/Benefactorum" target="_blank" rel="noopener noreferrer">
           <img class='reseau' src="./assets/images/socials/github.svg" alt="Github"></img>
         </a>
       </div>
@@ -279,14 +284,15 @@
     <div class="legal-links">
       2023
       -
-      <a href="#mentions-legales">Mentions légales</a>
+      <a href="#mentions-legales" rel="nofollow">Mentions légales</a>
       -
-      <a href="#donnees-personnelles">Données personnelles</a>
+      <a href="#donnees-personnelles" rel="nofollow">Données personnelles</a>
 
     </div>
   </div>
 </footer>
 
+  </div>
 </body>
 
 <script>
