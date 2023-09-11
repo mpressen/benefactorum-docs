@@ -606,7 +606,7 @@ body {
       padding: 16px 0;
       color: $font-color;
       font-size: 20px;
-      font-weight: 400;
+      font-weight: 200;
       border: none;
       background: none;
       outline: none;
@@ -684,12 +684,12 @@ body {
           max-height: 11em;
 
           &.plus {
-              max-height: 27em;
-            }
+            max-height: 27em;
+          }
 
-            &.plusplus {
-              max-height: 50em;
-            }
+          &.plusplus {
+            max-height: 50em;
+          }
         }
       }
     }
